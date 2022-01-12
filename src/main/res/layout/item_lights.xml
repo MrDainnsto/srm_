@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:backgroundTint="#FFC107">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/backgroundLight">
+
+        <TextView
+            android:id="@+id/itemAvailable2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:lines="1"
+            android:text="Калина"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/available2"
+            tools:layout_editor_absoluteY="47dp" />
+
+        <TextView
+            android:id="@+id/available2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="4dp"
+            android:lines="1"
+            android:text="Автомобиль:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageShop"
+            tools:layout_editor_absoluteY="47dp" />
+
+        <ImageView
+            android:id="@+id/imageShop"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_margin="7dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="H,1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/nameShop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:lines="1"
+            android:text="ПТФ Sal-Man 60W"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageShop"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/available"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:lines="1"
+            android:text="Тип:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageShop"
+            tools:layout_editor_absoluteY="71dp" />
+
+        <TextView
+            android:id="@+id/itemAvailable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:lines="1"
+            android:text="ПТФ"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/available"
+            tools:layout_editor_absoluteY="71dp" />
+
+        <TextView
+            android:id="@+id/delivery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:lines="1"
+            android:text="Цена:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageShop"
+            app:layout_constraintTop_toBottomOf="@+id/available" />
+
+        <TextView
+            android:id="@+id/itemDelivery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:lines="1"
+            android:text="2790 р."
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/delivery"
+            app:layout_constraintTop_toBottomOf="@+id/itemAvailable" />
+
+        <Button
+            android:id="@+id/buyItem"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/black"
+            android:text="Подробнее"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageShop"
+            app:layout_constraintTop_toBottomOf="@+id/delivery" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

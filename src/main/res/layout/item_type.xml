@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:backgroundTint="#FFC107">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/backgroundLight">
+
+        <ImageView
+            android:id="@+id/imageShop"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_margin="7dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="H,1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/nameShop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:lines="1"
+            android:text="Двигатель"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageShop"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/available"
+            android:layout_width="235dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:autoText="false"
+            android:lines="5"
+            android:text="Множество запчастей для тюнинга отечественных моторов"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/buyItem"
+            app:layout_constraintStart_toEndOf="@+id/imageShop"
+            app:layout_constraintTop_toBottomOf="@+id/nameShop" />
+
+        <Button
+            android:id="@+id/buyItem"
+            android:layout_width="175dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/black"
+            android:text="Открыть"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageShop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
