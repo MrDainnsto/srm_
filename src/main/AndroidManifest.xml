@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crm">
         <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
@@ -20,6 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="activity.RegistrationActivity" />
+        <activity android:name="activity.LoginActivity" />
+        <activity android:name="activity.HelloActivity" />
+        <activity android:name="activity.CarsActivity" />
+        <activity android:name="activity.LightsActivity" />
+        <activity android:name="activity.TypesActivity" />
     </application>
 
 </manifest>
