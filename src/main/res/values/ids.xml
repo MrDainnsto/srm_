@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rvCars" type="id" />
+    <item name="rvTypes" type="id" />
+    <item name="rvLights" type="id" />
+</resources>
